@@ -1,0 +1,64 @@
+/* Selaras Coffe - branding: cokelat espresso, krem, aksen karamel */
+:root {
+  --brand-primary: #3B2416;   /* cokelat espresso */
+  --brand-accent: #C68642;    /* karamel */
+  --brand-accent-dark: #A86D2E;
+  --brand-cream: #F7EFE3;     /* krem */
+  --brand-radius: 14px;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 76px; }
+body { background: #fffdf9; color: var(--brand-primary); }
+a { color: var(--brand-accent-dark); }
+.section-title { font-weight: 700; margin-bottom: .75rem; }
+.section-cream { background: var(--brand-cream); }
+
+/* Tombol */
+.btn-brand { background: var(--brand-accent); border: 2px solid var(--brand-accent); color: var(--brand-primary); font-weight: 600; }
+.btn-brand:hover, .btn-brand:focus { background: var(--brand-primary); border-color: var(--brand-primary); color: var(--brand-cream); }
+.btn-outline-brand { border: 2px solid var(--brand-primary); color: var(--brand-primary); font-weight: 600; }
+.btn-outline-brand:hover { background: var(--brand-primary); color: var(--brand-cream); }
+.hero .btn-outline-brand { border-color: var(--brand-cream); color: var(--brand-cream); }
+.hero .btn-outline-brand:hover { background: var(--brand-cream); color: var(--brand-primary); }
+
+/* Navbar */
+.navbar-brand-dark { background: var(--brand-primary); }
+.navbar-brand-dark .navbar-brand { color: var(--brand-cream); font-weight: 700; }
+.navbar-brand-dark .nav-link { color: #e6d8c6; }
+.navbar-brand-dark .nav-link:hover { color: var(--brand-accent); }
+.navbar-brand-dark .navbar-toggler { border-color: rgba(255,255,255,.4); }
+.navbar-brand-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23F7EFE3' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Alert */
+.alert-brand { background: var(--brand-accent); color: var(--brand-primary); border: 0; border-radius: var(--brand-radius); }
+
+/* Hero */
+.hero { background: var(--brand-primary); color: var(--brand-cream); margin-top: 1rem; }
+.hero-img { max-width: 400px; width: 100%; border: 4px solid var(--brand-accent); border-radius: 50% 50% var(--brand-radius) var(--brand-radius); }
+.about-img { border: 3px solid var(--brand-primary); }
+
+/* Card produk */
+.product-card { border: 2px solid var(--brand-primary); border-radius: var(--brand-radius); overflow: hidden; transition: transform .2s, box-shadow .2s; }
+.product-card:hover { transform: translateY(-4px); box-shadow: 6px 6px 0 var(--brand-accent); }
+.product-visual { background: var(--brand-cream); padding: 1.25rem; text-align: center; }
+.product-visual svg { width: 120px; height: 96px; }
+.price { font-weight: 700; font-size: 1.2rem; color: var(--brand-accent-dark); }
+
+/* Form */
+.form-card { background: #fff; border: 2px solid var(--brand-primary); border-radius: var(--brand-radius); }
+.form-control:focus, .form-select:focus { border-color: var(--brand-accent); box-shadow: 0 0 0 .2rem rgba(198,134,66,.3); }
+
+/* Modal */
+.modal-brand { border: 2px solid var(--brand-primary); border-radius: var(--brand-radius); overflow: hidden; background: #fffdf9; }
+.modal-brand .modal-header, .modal-brand .modal-footer { border: 0; }
+
+/* Footer */
+.brand-footer { background: var(--brand-primary); color: #e6d8c6; }
+.brand-footer p:first-child { color: var(--brand-accent); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .product-card { transition: none; }
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Selaras Coffe | Company Profile</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <!-- Bootstrap 5.3.8 via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- CSS custom (branding) -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR: navbar-expand-lg + sticky-top -->
+  <nav class="navbar navbar-expand-lg sticky-top navbar-brand-dark">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#beranda">
+        <img src="images/logo.png" alt="Logo Selaras Coffe" width="36" height="36">
+        Selaras Coffe
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuUtama"
+              aria-controls="menuUtama" aria-expanded="false" aria-label="Buka menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuUtama">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#beranda">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ALERT PROMO: alert-dismissible -->
+  <div class="container mt-3">
+    <div class="alert alert-brand alert-dismissible fade show" role="alert">
+      <strong>Promo November:</strong> beli 2 Dirty Latte gratis 1 untuk pesanan hingga 30 November.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Tutup"></button>
+    </div>
+  </div>
+
+  <!-- HERO: row + col-lg-6 -->
+  <section id="beranda" class="hero py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold">Kopi lokal yang selaras di setiap tegukan</h1>
+          <p class="lead my-3">Selaras Coffe adalah UMKM kopi lokal yang meracik kopi dan minuman kekinian dengan takaran yang konsisten, dari biji pilihan petani Indonesia.</p>
+          <a href="#produk" class="btn btn-brand btn-lg me-2">Lihat Menu</a>
+          <a href="#kontak" class="btn btn-outline-brand btn-lg">Hubungi Kami</a>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="images/hero.png" class="img-fluid hero-img" alt="Ilustrasi secangkir kopi dengan latte art">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TENTANG KAMI -->
+  <section id="tentang" class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-5">
+          <img src="images/tentang.png" class="img-fluid rounded-4 about-img" alt="Tiga cangkir kopi berjajar">
+        </div>
+        <div class="col-md-7">
+          <h2 class="section-title">Tentang Kami</h2>
+          <p>Selaras Coffe berawal dari kedai kecil di Depok. Kami percaya kopi yang enak adalah kopi yang seimbang: pahit, manis, dan creamy berjalan berdampingan.</p>
+          <p class="mb-0">Kini kami melayani pesanan harian, acara kantor, dan kerja sama dengan kafe mitra, dengan tetap menjaga kualitas dan harga yang ramah di kantong.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUK: col-12 col-md-6 col-lg-4 -->
+  <section id="produk" class="py-5 section-cream">
+    <div class="container">
+      <h2 class="section-title text-center">Produk Kami</h2>
+      <p class="text-center mb-4">Tiga menu favorit pelanggan Selaras Coffe.</p>
+      <div class="row g-4">
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <div class="product-visual" style="--cup:#3B2416">
+              <svg viewBox="0 0 100 80" aria-hidden="true"><use href="#cup"/></svg>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Americano</h3>
+              <p class="card-text">Espresso dengan air panas atau dingin. Pahit bersih dan ringan.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="price">Rp18.000</span>
+                <button class="btn btn-brand btn-sm" data-bs-toggle="modal" data-bs-target="#modalProduk"
+                  data-nama="Americano" data-harga="Rp18.000" data-warna="#3B2416"
+                  data-deskripsi="Double shot espresso dari biji arabika-robusta lokal, disajikan dengan air panas atau es. Ukuran 350 ml.">Detail</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <div class="product-visual" style="--cup:#A8743F">
+              <svg viewBox="0 0 100 80" aria-hidden="true"><use href="#cup"/></svg>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Dirty Latte</h3>
+              <p class="card-text">Susu dingin segar dengan shot espresso panas di atasnya.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="price">Rp24.000</span>
+                <button class="btn btn-brand btn-sm" data-bs-toggle="modal" data-bs-target="#modalProduk"
+                  data-nama="Dirty Latte" data-harga="Rp24.000" data-warna="#A8743F"
+                  data-deskripsi="Susu segar dingin dituang shot espresso panas sehingga terbentuk lapisan cokelat yang cantik. Ukuran 350 ml.">Detail</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="card product-card h-100">
+            <div class="product-visual" style="--cup:#8A6BA8">
+              <svg viewBox="0 0 100 80" aria-hidden="true"><use href="#cup"/></svg>
+            </div>
+            <div class="card-body d-flex flex-column">
+              <h3 class="card-title h5">Ube Matcha</h3>
+              <p class="card-text">Perpaduan ubi ungu manis dan matcha yang lembut, tanpa kopi.</p>
+              <div class="mt-auto d-flex justify-content-between align-items-center">
+                <span class="price">Rp26.000</span>
+                <button class="btn btn-brand btn-sm" data-bs-toggle="modal" data-bs-target="#modalProduk"
+                  data-nama="Ube Matcha" data-harga="Rp26.000" data-warna="#8A6BA8"
+                  data-deskripsi="Lapisan ube creamy dan matcha berkualitas dengan susu. Cocok untuk yang tidak minum kopi. Ukuran 350 ml.">Detail</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM KONTAK -->
+  <section id="kontak" class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <h2 class="section-title">Hubungi Kami</h2>
+          <p>Isi formulir untuk pesanan, kerja sama, atau pertanyaan. Kami membalas dalam 1 hari kerja.</p>
+          <p class="mb-1"><strong>Alamat:</strong> Jl. Margonda Raya No. 21, Depok</p>
+          <p class="mb-1"><strong>Jam buka:</strong> Setiap hari, 08.00 - 21.00 WIB</p>
+          <p class="mb-0"><strong>WhatsApp:</strong> 0812-0000-1234</p>
+        </div>
+        <div class="col-lg-7">
+          <div id="notifKirim"></div>
+          <form id="formKontak" class="p-4 form-card" novalidate>
+            <div class="mb-3">
+              <label for="nama" class="form-label">Nama</label>
+              <input type="text" class="form-control" id="nama" required minlength="3">
+              <div class="invalid-feedback">Nama wajib diisi, minimal 3 karakter.</div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+              <div class="invalid-feedback">Masukkan email yang valid, contoh: nama@email.com.</div>
+            </div>
+            <div class="mb-3">
+              <label for="keperluan" class="form-label">Keperluan</label>
+              <select class="form-select" id="keperluan" required>
+                <option value="" selected disabled>Pilih keperluan</option>
+                <option>Pesan untuk acara</option>
+                <option>Kerja sama</option>
+                <option>Pertanyaan umum</option>
+              </select>
+              <div class="invalid-feedback">Pilih salah satu keperluan.</div>
+            </div>
+            <div class="mb-3">
+              <label for="pesan" class="form-label">Pesan</label>
+              <textarea class="form-control" id="pesan" rows="4" required minlength="10"></textarea>
+              <div class="invalid-feedback">Pesan wajib diisi, minimal 10 karakter.</div>
+            </div>
+            <button type="submit" class="btn btn-brand btn-lg">Kirim Pesan</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER: brand-footer -->
+  <footer class="brand-footer py-4">
+    <div class="container text-center">
+      <p class="fw-bold fs-5 mb-1">Selaras Coffe</p>
+      <p class="mb-1">Jl. Margonda Raya No. 21, Depok, Jawa Barat</p>
+      <p class="small mb-0">&copy; 2026 Selaras Coffe. Hak cipta dilindungi.</p>
+    </div>
+  </footer>
+
+  <!-- MODAL DETAIL PRODUK (satu modal, isi dari data-*) -->
+  <div class="modal fade" id="modalProduk" tabindex="-1" aria-labelledby="namaProduk" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content modal-brand">
+        <div class="product-visual modal-visual" id="visualProduk">
+          <svg viewBox="0 0 100 80" aria-hidden="true"><use href="#cup"/></svg>
+        </div>
+        <div class="modal-header">
+          <h2 class="modal-title fs-4" id="namaProduk"></h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        </div>
+        <div class="modal-body">
+          <p id="deskripsiProduk"></p>
+          <p class="price mb-0" id="hargaProduk"></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-brand" data-bs-dismiss="modal">Tutup</button>
+          <a href="#kontak" class="btn btn-brand" data-bs-dismiss="modal">Pesan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gambar cangkir (dipakai ulang lewat <use>) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="cup" viewBox="0 0 100 80">
+      <path d="M20 22h48v26a18 18 0 0 1-18 18H38a18 18 0 0 1-18-18z" fill="var(--cup)"/>
+      <path d="M68 28h6a8 8 0 0 1 0 16h-6" fill="none" stroke="var(--cup)" stroke-width="5"/>
+      <path d="M32 6c-4 4 4 6 0 12M46 6c-4 4 4 6 0 12M60 6c-4 4 4 6 0 12" fill="none" stroke="#C68642" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
